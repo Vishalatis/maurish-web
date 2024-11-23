@@ -744,6 +744,7 @@
   color: #000000;
   font-family: poppins, sans-serif;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .feature_category_section_right_card {

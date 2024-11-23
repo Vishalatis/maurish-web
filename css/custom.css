@@ -931,6 +931,8 @@
   font-size: 22px;
   font-weight: 600;
   color: #0f0f0f;
+
+  text-transform: uppercase;
 }
 
 .collection_card_img {
@@ -1010,6 +1012,7 @@
   font-size: 22px;
   font-weight: 600;
   color: #151515;
+  text-transform: uppercase;
 }
 
 .service_card_para p {

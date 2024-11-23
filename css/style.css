@@ -4571,6 +4571,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 .site-footer__copyright {
   font-size: 14px;
+  text-transform: uppercase;
 }
 .site-footer__copyright a:hover {
   text-decoration: underline;

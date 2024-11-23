@@ -1792,25 +1792,27 @@
                       ></span>
                     </button>
                   </div>
-                  <div class="indicator indicator--mobile d-sm-flex d-none">
-                    <a href="wishlist.html" class="indicator__button"
-                      ><span class="indicator__area"
-                        ><svg width="20px" height="20px">
-                          <use xlink:href="images/sprite.svg#heart-20"></use>
-                        </svg>
-                        <span class="indicator__value">0</span></span
-                      ></a
-                    >
-                  </div>
                   <div class="indicator indicator--mobile">
-                    <a href="cart.html" class="indicator__button"
-                      ><span class="indicator__area"
-                        ><svg width="20px" height="20px">
-                          <use xlink:href="images/sprite.svg#cart-20"></use>
-                        </svg>
-                        <span class="indicator__value">3</span></span
-                      ></a
-                    >
+                    <a href="cart.html" class="indicator__button">
+                      <img
+                        src="images/icons/5.svg"
+                        alt="bag"
+                        style="width: 25px; height: 25px"
+                      />
+                      <span class="indicator__value">3</span>
+                    </a>
+                  </div>
+
+                  <div class="indicator indicator--mobile d-none">
+                    <a href="profile.html" class="indicator__button"
+                      ><span class="indicator__area">
+                        <img
+                          src="images/icons/6.svg"
+                          alt="bag"
+                          style="width: 25px; height: 25px"
+                        />
+                      </span>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -1979,7 +1981,20 @@
                         <li
                           class="nav-links__item nav-links__item--with-submenu"
                         >
-                          <a href="index.html">
+                          <div
+                            style="
+                              position: absolute;
+                              top: 6px;
+                              margin-left: 60px;
+                            "
+                          >
+                            <img
+                              src="images/icons/7.svg"
+                              alt="img"
+                              style="width: 35px; height: 18px"
+                            />
+                          </div>
+                          <a href="index.html" style="position: relative">
                             <span
                               >Top Wear
                               <i class="fas fa-angle-down mx-2"></i> </span
@@ -2551,11 +2566,17 @@
                     <div class="indicator indicator--trigger--click">
                       <button type="button" class="indicator__button">
                         <span class="indicator__area">
-                          <i
+                          <!-- <i
                             class="fas fa-search indicator__icon"
                             width="20px"
                             height="20px"
-                          ></i>
+                          ></i> -->
+                          <img
+                            src="images/icons/1.svg"
+                            alt="search"
+                            class="indicator__icon"
+                            style="width: 20px; height: 20px"
+                          />
 
                           <i
                             class="fas fa-times indicator__icon indicator__icon--open"
@@ -2592,12 +2613,13 @@
 
                     <div class="indicator indicator--trigger--click">
                       <a href="#" class="indicator__button"
-                        ><span class="indicator__area"
-                          ><i
-                            class="fas fa-user"
-                            width="20px"
-                            height="20px"
-                          ></i> </span
+                        ><span class="indicator__area">
+                          <img
+                            src="images/icons/2.svg"
+                            alt="search"
+                            class=""
+                            style="width: 20px; height: 20px"
+                          /> </span
                       ></a>
                       <div class="indicator__dropdown">
                         <!-- .drop -->
@@ -2615,23 +2637,25 @@
                     <div class="indicator">
                       <a href="wishlist.html" class="indicator__button"
                         ><span class="indicator__area">
-                          <i
-                            class="far fa-heart"
-                            width="20px"
-                            height="20px"
-                          ></i>
+                          <img
+                            src="images/icons/3.svg"
+                            alt="wishlist"
+                            class=""
+                            style="width: 20px; height: 20px"
+                          />
                           <span class="indicator__value">0</span></span
                         >
                       </a>
                     </div>
                     <div class="indicator indicator--trigger--click">
                       <a href="cart.html" class="indicator__button"
-                        ><span class="indicator__area"
-                          ><i
-                            class="fas fa-shopping-basket"
-                            width="20px"
-                            height="20px"
-                          ></i>
+                        ><span class="indicator__area">
+                          <img
+                            src="images/icons/4.svg"
+                            alt="wishlist"
+                            class=""
+                            style="width: 20px; height: 20px"
+                          />
                           <span class="indicator__value">3</span></span
                         ></a
                       >
@@ -2701,14 +2725,14 @@
                             <a
                               class="btn btn-secondary"
                               href="cart.html"
-                              style="font-size: 14px"
-                              >View Cart</a
+                              style="font-size: 12px"
+                              >VIEW CART</a
                             >
                             <a
                               class="btn btn-primary"
                               href="checkout.html"
-                              style="font-size: 14px"
-                              >Checkout</a
+                              style="font-size: 12px"
+                              >CHECKOUT</a
                             >
                           </div>
                         </div>
@@ -2982,7 +3006,11 @@
                           class=""
                           data-toggle="modal"
                           data-target="#sizeModal"
-                          style="color: #000; border-bottom: 1px solid #000"
+                          style="
+                            color: #000;
+                            border-bottom: 1px solid #000;
+                            text-wrap: nowrap;
+                          "
                         >
                           SIZE GUIDE
                         </a>
@@ -3019,7 +3047,11 @@
                           <a href="cart.html">
                             <button
                               class="btn btn-primary btn-lg"
-                              style="font-size: 15px; text-transform: uppercase"
+                              style="
+                                font-size: 15px;
+                                text-transform: uppercase;
+                                text-wrap: nowrap;
+                              "
                             >
                               Add to cart
                             </button>

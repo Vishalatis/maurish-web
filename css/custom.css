@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
   transition: transform 0.3s ease;
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -1496,7 +1496,7 @@
 .wishlist_btn {
   border: 1px solid #00000080;
   padding: 10px 20px;
-  background: #fff;
+  background: transparent;
   border-radius: 5px;
   color: #000;
   font-size: 16px;
@@ -1769,6 +1769,7 @@ p {
   font-size: 16px;
   font-weight: 500;
   color: #000000;
+  text-wrap: nowrap;
 }
 
 .my_account_product_price {
@@ -2301,6 +2302,7 @@ p {
 .track_order_price_details_card {
   background: #cbcbcb;
   padding: 20px;
+  border-radius: 20px;
 }
 
 .track_order_price_details_card_title h6 {
@@ -2397,4 +2399,10 @@ p {
 .document__title {
   text-transform: uppercase;
   color: #000;
+}
+
+/* product details */
+.product-gallery__featured a {
+  display: block;
+  /* padding: 20px; */
 }

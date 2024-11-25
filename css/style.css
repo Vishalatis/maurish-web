@@ -6072,6 +6072,14 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     font-size: 22px !important;
   }
 
+  .footer-links__title::after {
+    left: 70px;
+  }
+
+  .subscribe_content {
+    display: none;
+  }
+
   .product-tabs .product-tabs__item::-webkit-scrollbar {
     display: none;
     height: 0;

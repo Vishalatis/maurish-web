@@ -83,7 +83,7 @@
             class="nav nav-tabs"
             id="myTab"
             role="tablist"
-            style="background: #424242; height: 55px; padding-left: 20px"
+            style="background: #000; height: 55px; padding-left: 20px"
           >
             <li class="nav-item" role="presentation">
               <button
@@ -1784,20 +1784,24 @@
                     class="indicator indicator--mobile-search indicator--mobile d-sm-none"
                   >
                     <button class="indicator__button">
-                      <span class="indicator__area"
-                        ><svg width="20px" height="20px">
-                          <use
-                            xlink:href="images/sprite.svg#search-20"
-                          ></use></svg
-                      ></span>
+                      <span class="indicator__area">
+                        <img
+                          src="images/icons/mobile-search.svg"
+                          alt="img"
+                          style="width: 35px; height: 35px"
+                      /></span>
                     </button>
                   </div>
                   <div class="indicator indicator--mobile">
-                    <a href="cart.html" class="indicator__button">
+                    <a
+                      href="cart.html"
+                      class="indicator__button"
+                      style="margin: 10px"
+                    >
                       <img
                         src="images/icons/5.svg"
                         alt="bag"
-                        style="width: 25px; height: 25px"
+                        style="width: 35px; height: 35px"
                       />
                       <span class="indicator__value">3</span>
                     </a>
@@ -3091,6 +3095,7 @@
                     </div>
                   </div>
                 </div>
+                <!-- product footer -->
               </div>
             </div>
 
@@ -3099,16 +3104,19 @@
                 <a
                   href="#tab-description"
                   class="product-tabs__item product-tabs__item--active"
-                  >Product Description</a
                 >
-                <a href="#tab-reviews" class="product-tabs__item">Reviews</a>
+                  Description</a
+                >
 
-                <a href="#tab-tags" class="product-tabs__item">Tags</a>
+                <!-- <a href="#tab-tags" class="product-tabs__item">Tags</a> -->
 
                 <a href="#tab-specification" class="product-tabs__item"
-                  >Additional information
+                  >Specification
                 </a>
+
+                <a href="#tab-reviews" class="product-tabs__item">Reviews</a>
               </div>
+
               <div class="product-tabs__content">
                 <div
                   class="product-tabs__pane product-tabs__pane--active"
@@ -3754,7 +3762,7 @@
                     </form>
                   </div>
                 </div>
-                <div class="product-tabs__pane" id="tab-tags">
+                <!-- <div class="product-tabs__pane" id="tab-tags">
                   <div class="reviews-view">
                     <div class="reviews-view__list">
                       <h3 class="reviews-view__header">Tags</h3>
@@ -3767,7 +3775,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>

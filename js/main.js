@@ -520,8 +520,10 @@
         nav: false,
         dots: true,
         loop: true,
-        autoplay: false,
-        autoplayTimeout: 2000,
+        autoplay: false, // Enable autoplay
+        autoplayTimeout: 5000, // Duration for each scroll
+        autoplayHoverPause: true, // Pause on hover
+        smartSpeed: 5000, // Smooth transition speed
       };
       const layoutOptions = {
         "grid-4": {

@@ -717,7 +717,7 @@
   /* z-index: 9999999; */
   right: 0;
   padding: 20px;
-  background: #f1f1f1;
+  background: rgba(241, 241, 241, 0.77);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -726,6 +726,8 @@
   border: 4px solid #000000;
   border-radius: 10px;
   cursor: pointer;
+  /* Add transition */
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .feature_category_card_info:hover {
@@ -938,7 +940,7 @@
 
 .collection_card_img {
   width: 100%;
-  height: 580px;
+  height: 500px;
   margin-bottom: 10px;
 }
 .collection_card_img img {
@@ -1007,7 +1009,7 @@
   height: 38px;
   position: absolute;
   top: 125px;
-  left: 154px;
+  left: 170px;
 }
 .service_card_title h5 {
   font-size: 22px;

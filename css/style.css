@@ -328,6 +328,10 @@ h6 {
   text-decoration: none;
   border-bottom: 1px solid #0c0c0c;
 }
+
+.block-header__view_all_btn a:hover {
+  color: #d9121f;
+}
 .block-header__divider {
   -ms-flex-positive: 1;
   flex-grow: 1;
@@ -701,10 +705,10 @@ h6 {
 .btn-light.focus,
 .btn-light:focus,
 .btn-light:hover {
-  border-color: #f0f0f0;
-  background: #f0f0f0;
-  color: #3d464d;
-  fill: #3d464d;
+  border-color: #000;
+  background: #000;
+  color: #fff;
+  fill: #fff;
 }
 .btn-light.focus .fake-svg-icon,
 .btn-light:focus .fake-svg-icon,
@@ -3177,7 +3181,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   transition: 0.15s;
 }
 .dropcart__product-name a:hover {
-  color: #1a66ff;
+  color: rgb(217, 18, 31);
 }
 .dropcart__product-info {
   margin: 0 10px 0 16px;
@@ -3279,6 +3283,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
+  fill: #000;
 }
 .indicator__value {
   height: 15px;
@@ -3491,7 +3496,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   height: 54px;
 }
 .mobile-header__panel {
-  background: #000;
+  background: transparent;
   box-shadow: 0 1px rgba(0, 0, 0, 0.04), inset 0 -1px rgba(0, 0, 0, 0.04);
   color: #fff;
   position: relative;
@@ -3513,7 +3518,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   height: 36px;
   border-radius: 2px;
   background: transparent;
-  fill: #fff;
+  fill: #000;
+  color: #000;
   border: none;
   padding: 0;
   margin: 0;
@@ -3827,6 +3833,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   .mobile-links__item-link {
   padding: 12px 20px;
   text-transform: uppercase;
+  color: #000;
+  font-weight: 400;
 }
 
 .mobile-links:not(.mobile-links--level--0) {
@@ -3839,6 +3847,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 .mobile-links--level--1 .mobile-links__item .mobile-links__item-link {
   padding: 13px 20px;
+  text-transform: uppercase;
 }
 .mobile-links--level--1 .mobile-links {
   padding-left: 20px;
@@ -4444,8 +4453,28 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   color: #000;
   text-transform: uppercase;
   font-family: "Jost", serif;
-  /* border-bottom: 1px solid #000; */
+  position: relative; /* Required for ::after to position relative to this element */
 }
+
+.footer-links__title::after {
+  content: ""; /* Ensures the pseudo-element is displayed */
+  display: block;
+  width: 25%; /* Full width of the parent element */
+  height: 2px; /* Thickness of the border */
+  background-color: #000; /* Color of the border */
+  position: absolute;
+  bottom: -5px; /* Position it slightly below the element */
+  left: 0; /* Align with the start of the parent */
+}
+
+.footer-links__title_download {
+  margin-bottom: 22px;
+  color: #000;
+  text-transform: uppercase;
+  font-family: "Jost", serif;
+  font-weight: 300;
+}
+
 .footer-links__list {
   font-size: 15px;
   line-height: 35px;
@@ -4459,7 +4488,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   font-size: 17px;
 }
 .footer-links__list a:hover {
-  color: #f92950;
+  color: #000;
+  letter-spacing: 2px;
 }
 @media (max-width: 767px) {
   .footer-links__title {
@@ -5506,6 +5536,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   -ms-grid-column: 2;
   position: relative;
   min-height: 0;
+  margin-top: 5rem;
 }
 .product__sidebar {
   -ms-grid-row: 2;
@@ -6023,11 +6054,22 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 @media (max-width: 767px) {
   .product-tabs .product-tabs__item {
-    padding: 4px 24px;
-    font-size: 12px;
+    padding: 4px 17px;
+    font-size: 16px;
     white-space: nowrap; /* Prevent text wrapping */
     margin-bottom: 8px;
     scrollbar-width: none; /* Hide scrollbar in Firefox */
+  }
+
+  .typography h3 {
+    font-size: 22px !important;
+  }
+
+  .spec__header {
+    font-size: 22px !important;
+  }
+  .reviews-view__header {
+    font-size: 22px !important;
   }
 
   .product-tabs .product-tabs__item::-webkit-scrollbar {

@@ -2682,8 +2682,26 @@
 
       <!-- site__body -->
       <div class="site__body">
+     <div class="d-lg-none d-block">
+      <ul class="nav nav-tabs" id="myTab" role="tablist" style="margin-top: 10px;">
+        <li class="nav-item" style="width: 33.33%;text-align: center;">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" style="padding: 10px;color: #000;font-size: 12px;border: none;">MEN</a>
+        </li>
+        <li class="nav-item" style="width: 33.33%;text-align: center;">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" style="padding: 10px;color: #000;font-size: 12px;">WOMEN</a>
+        </li>
+        <li class="nav-item" style="width: 33.33%;text-align: center;">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false" style="padding: 10px;color: #000;font-size: 12px;">KIDS</a>
+        </li>
+      </ul>
+     </div>
+
+    
         <!-- .block-slideshow -->
-        <div class="block-slideshow block-slideshow--layout--full block">
+
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+               <div class="block-slideshow block-slideshow--layout--full block">
           <div class="block-slideshow__body">
             <div class="owl-carousel">
               <a class="block-slideshow__slide" href="#">
@@ -2698,6 +2716,43 @@
             </div>
           </div>
         </div>
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+               <div class="block-slideshow block-slideshow--layout--full block">
+          <div class="block-slideshow__body">
+            <div class="owl-carousel">
+              <a class="block-slideshow__slide" href="#">
+                <img src="images/banners/5.svg" alt="img" />
+              </a>
+              <a class="block-slideshow__slide" href="#">
+                <img src="images/banners/6.svg" alt="img" />
+              </a>
+              <a class="block-slideshow__slide" href="#">
+                <img src="images/banners/7.svg" alt="img" />
+              </a>
+            </div>
+          </div>
+        </div>
+          </div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+               <div class="block-slideshow block-slideshow--layout--full block">
+          <div class="block-slideshow__body">
+            <div class="owl-carousel">
+              <a class="block-slideshow__slide" href="#">
+                <img src="images/banners/5.svg" alt="img" />
+              </a>
+              <a class="block-slideshow__slide" href="#">
+                <img src="images/banners/6.svg" alt="img" />
+              </a>
+              <a class="block-slideshow__slide" href="#">
+                <img src="images/banners/7.svg" alt="img" />
+              </a>
+            </div>
+          </div>
+        </div>
+          </div>
+        </div>
+     
         <!-- .block-slideshow / end -->
       </div>
       <!-- site__body / end -->

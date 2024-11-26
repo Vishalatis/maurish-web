@@ -66,6 +66,7 @@ label {
   margin-bottom: 0.25rem;
   font-size: 12px;
   font-weight: 400;
+  color: #131118;
 }
 h1 {
   font-size: 36px;
@@ -309,7 +310,7 @@ h6 {
   font-family: "Manrope", sans-serif;
 }
 .block-header__subtitle {
-  color: #333e48;
+  color: #0c0c0c;
   font-size: 32px;
   font-weight: 600;
   font-family: "Jost", serif;
@@ -497,6 +498,7 @@ h6 {
   transition: color 0.15s;
   font-size: 14px;
   font-weight: 700;
+  text-transform: uppercase;
 }
 .breadcrumb-item a:hover {
   color: #f92950;
@@ -509,6 +511,7 @@ h6 {
 }
 .breadcrumb-item.active {
   color: #999;
+  text-transform: uppercase;
 }
 .breadcrumb-arrow {
   fill: #d1d1d1;
@@ -814,8 +817,8 @@ h6 {
   border-radius: 7px;
 }
 .card {
-  border: 2px solid #f0f0f0;
-  border-radius: 2px;
+  /* border: 1.5px solid #000; */
+  border-radius: 5px;
 }
 .card-body {
   padding: 2rem;
@@ -839,12 +842,13 @@ h6 {
   margin-left: -1.5rem;
 }
 .form-control {
-  border-radius: 10px;
+  border-radius: 5px;
   line-height: 1.25;
   background: #fff;
 }
 .form-control::placeholder {
   font-size: 16px !important;
+  color: #131118;
 }
 .form-control-sm {
   height: calc(1.875rem + 2px);
@@ -3970,7 +3974,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   line-height: 1;
   letter-spacing: 0.02em;
   font-weight: 700;
-  color: inherit;
+  color: #000;
   text-transform: uppercase;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -3991,7 +3995,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   padding: 0 10px;
   height: 42px;
   border-radius: 2px;
-  font-size: 12px;
+  font-size: 14px;
 }
 .nav-links__item:hover > a {
   color: inherit;
@@ -4324,7 +4328,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   align-items: center;
   margin: 0;
   background-color: #000;
-  gap: 325px;
+  gap: 235px;
 }
 .topbar__item-value {
   color: #1a66ff;
@@ -4450,10 +4454,12 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 .footer-links__title {
   margin-bottom: 22px;
-  color: #000;
+  color: #1b1b1b;
   text-transform: uppercase;
   font-family: "Jost", serif;
-  position: relative; /* Required for ::after to position relative to this element */
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 .footer-links__title::after {
@@ -4486,6 +4492,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   color: #808080;
   transition: 0.15s;
   font-size: 17px;
+  font-weight: 400;
 }
 .footer-links__list a:hover {
   color: #000;
@@ -4543,19 +4550,19 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   color: #fff;
 }
 .footer-newsletter__social-link--facebook a {
-  background: #3c5a99;
+  background: #000000;
 }
 .footer-newsletter__social-link--twitter a {
-  background: #00a2e8;
+  background: #000000;
 }
 .footer-newsletter__social-link--youtube a {
-  background: #e52e2e;
+  background: #000000;
 }
 .footer-newsletter__social-link--instagram a {
-  background: #815dc7;
+  background: #000000;
 }
 .footer-newsletter__social-link--rss a {
-  background: #ffc338;
+  background: #000000;
 }
 .footer-newsletter__form {
   display: -ms-flexbox;
@@ -4587,7 +4594,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     margin: 0 auto;
   }
   .footer-newsletter__social-links {
-    margin-top: 16px;
+    margin-top: 0px;
+    margin-bottom: 15px;
     -ms-flex-pack: center;
     justify-content: center;
   }
@@ -4994,14 +5002,14 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   }
 }
 .cart__actions {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .cart__coupon-form {
-  width: calc(50% - 15px);
+  width: calc(100% - 15px);
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
@@ -5016,7 +5024,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: end;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
 }
 .cart__update-button {
   margin-left: 0.5rem;
@@ -5074,7 +5082,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     display: block;
   }
   .cart__coupon-form {
-    width: 100%;
+    width: auto;
+    margin: 1rem;
   }
   .cart__buttons {
     -ms-flex-direction: column;
@@ -5167,6 +5176,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     padding: 25px;
     font-size: 16px;
     font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
   }
   .cart-table__head .cart-table__column:last-child {
     border-top-right-radius: 2.5px;
@@ -5984,7 +5995,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 .product-tabs__item {
   font-size: 20px;
-  padding: 18px 48px;
+  padding: 10px 48px;
   border-bottom: 2px solid transparent;
   color: #151515;
   font-weight: 400;
@@ -5998,7 +6009,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   border-bottom-color: #d9d9d9;
 }
 .product-tabs__item:first-child {
-  margin-left: auto;
+  /* margin-left: auto; */
   text-transform: uppercase;
 }
 .product-tabs__item:last-child {
@@ -6958,7 +6969,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 }
 @media (max-width: 575px) {
   .spec__row {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     padding: 12px 0;
   }
   .spec__name {
@@ -9786,5 +9798,43 @@ label.radio-card .card-content h5 {
   }
   .block-slideshow__slide-image--desktop {
     display: block;
+  }
+}
+
+/* Small devices (200px to 300px) */
+@media (min-width: 200px) and (max-width: 300px) {
+  .feature_category_card_info {
+    width: 130px;
+    height: 45px;
+    top: 258px;
+    left: 30px;
+  }
+
+  .feature_category_card_info h5 {
+    font-size: 14px;
+  }
+
+  .collection_card_title h2 {
+    font-size: 18px;
+  }
+
+  .collection_card_link a {
+    font-size: 12px;
+  }
+
+  .service_card_line {
+    left: 205px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+  .feature_category_card_info {
+    width: 130px !important;
+    height: 45px !important;
+    top: 225px !important;
+    left: 30px !important;
+  }
+  .service_card_line {
+    display: none;
   }
 }

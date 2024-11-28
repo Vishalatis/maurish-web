@@ -985,7 +985,7 @@
 .service_card {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1019,9 +1019,10 @@
 }
 
 .service_card_para p {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
   color: #3d3d3d;
+  text-transform: capitalize;
 }
 
 @media (max-width: 768px) {
@@ -1042,7 +1043,7 @@
 }
 
 .subscribe_content h5 {
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 300;
 }
 
@@ -1052,6 +1053,8 @@
   width: 473px;
   border: none;
   padding: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 
 .subscrbe_btn {
@@ -1062,6 +1065,7 @@
   border: none;
   outline: none;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 @media (max-width: 768px) {
